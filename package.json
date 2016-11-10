@@ -1,0 +1,23 @@
+{
+  "name": "41_bg-color-changer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Laure-Milian/41_bg-color-changer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Laure-Milian/41_bg-color-changer/issues"
+  },
+  "homepage": "https://github.com/Laure-Milian/41_bg-color-changer#readme",
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "semantic-ui-css": "^2.2.4"
+  }
+}
