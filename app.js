@@ -17,15 +17,15 @@
 			var greenValue = $('#inputGreen').val();
 			var blueValue = $('#inputBlue').val();
 			var alphaValue = $('#inputAlpha').val();
-			var codeRgba = 'rgba(' + redValue + ',' + greenValue + ',' + blueValue + ',' + alphaValue +')';
-			app.changeBackgroundColor(codeRgba);
-
+			
+			app.changeBackgroundColor(redValue, greenValue, blueValue, alphaValue);
 			app.changeToHexa(redValue, greenValue, blueValue);
 		},
 
-		changeBackgroundColor: function(rgba) {
-			$('body').css('backgroundColor', rgba);
-			$('.codeRgba').html(rgba);
+		changeBackgroundColor: function(rgbRed, rgbGreen, rgbBlue, alpha) {
+			var codeRgba = 'rgba(' + rgbRed + ',' + rgbGreen + ',' + rgbBlue + ',' + alpha +')';
+			$('body').css('backgroundColor', codeRgba);
+			$('.codeRgba').html(codeRgba);
 		},
 
 		changeToHexa : function(rgbRed, rgbGreen, rgbBlue) {
