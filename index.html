@@ -8,7 +8,27 @@
 <body>
 	
 	<div class='container'>
-		<h1>Hello</h1>
+		<form>
+			<div>
+				<label for='inputRed'>Red</label>
+				<input id='inputRed' type='range' min='0' max='255' value='0'/>
+			</div>
+			<div>
+				<label for='inputGreen'>Green</label>
+				<input id='inputGreen' type='range' min='0' max='255' value='0'/>
+			</div>
+			<div>
+				<label for='inputBlue'>Blue</label>
+				<input id='inputBlue' type='range' min='0' max='255' value='0'/>
+			</div>
+			<div>
+				<label for='inputAlpha'>Transparence</label>
+				<input id='inputAlpha' type='range' min='0' max='1' value='1'/>
+			</div>
+			<div class='codeRgba'>
+				rgba(0, 0, 0, 0);
+			</div>
+		</form>
 	</div>
 
 
