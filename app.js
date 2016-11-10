@@ -18,14 +18,27 @@
 			var blueValue = $('#inputBlue').val();
 			var alphaValue = $('#inputAlpha').val();
 			var codeRgba = 'rgba(' + redValue + ',' + greenValue + ',' + blueValue + ',' + alphaValue +')';
-			console.log(codeRgba);
 			app.changeBackgroundColor(codeRgba);
+
+			app.changeToHexa(redValue, greenValue, blueValue);
 		},
 
 		changeBackgroundColor: function(rgba) {
-			console.log('function appelée')
 			$('body').css('backgroundColor', rgba);
 			$('.codeRgba').html(rgba);
+		},
+
+		changeToHexa : function(rgbRed, rgbGreen, rgbBlue) {
+			var redValueNumber = parseInt(rgbRed, 10);
+			var greenValueNumber = parseInt(rgbGreen, 10);
+			var blueValueNumber = parseInt(rgbBlue, 10);
+
+			var redHexa = redValueNumber.toString(16);
+			var greenHexa = greenValueNumber.toString(16);
+			var blueHexa = blueValueNumber.toString(16);
+
+			var codeHexa = ('#' + redHexa + greenHexa + blueHexa).toUpperCase();
+			$('.codeHexa').html(codeHexa);
 		}
 
 	}
